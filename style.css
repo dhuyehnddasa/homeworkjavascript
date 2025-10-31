@@ -102,7 +102,7 @@ footer {
   text-align: center;
   padding: 30px 0;
   font-family: "Lavishly Yours", cursive;
-  font-size: 25px;
+  font-size: 20px;
   border-top: 3px solid #7f7d7f;
   background-color: black;
 }
@@ -111,4 +111,7 @@ footer a {
   text-decoration: none;
   margin-right: 10px;
   font-size: 20px;
+}
+footer p {
+  margin: 25px 0px 5px;
 }
