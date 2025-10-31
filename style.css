@@ -17,7 +17,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: "Love Light", cursive;
   font-weight: 600;
   font-style: normal;
@@ -32,6 +32,10 @@ h1 {
   border: 3px #fff700;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://i.pinimg.com/1200x/e2/37/a8/e237a8b0e9dfbaddcf556f6700f9952e.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   color: #fff;
   font-family: "Meow Script", cursive;
   font-style: normal;
@@ -48,10 +52,16 @@ h1 {
 
 .gallery {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   gap: 20px;
+  outline: 3px solid #7f7d7f;
+  outline-offset: 5px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.pinimg.com/1200x/e2/37/a8/e237a8b0e9dfbaddcf556f6700f9952e.jpg");
+  background-size: auto;
+  background-position: -30px;
 }
-
 .preview {
   width: 130px;
   height: 90px;
@@ -73,4 +83,32 @@ h1 {
 #image:hover {
   transform: scale(1.01);
   box-shadow: 0 6px 15px #dfee0e66;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-family: "Lavishly Yours", cursive;
+  font-size: 25px;
+  border-top: 3px solid #7f7d7f;
+  background-color: black;
+}
+footer a {
+  color: rgb(216, 202, 0);
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
 }
